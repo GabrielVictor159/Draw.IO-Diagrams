@@ -1,9 +1,12 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.14">
   <diagram name="Page-1" id="edf60f1a-56cd-e834-aa8a-f176f3a09ee4">
-    <mxGraphModel dx="7885" dy="4178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="12470" dy="6655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="orDh_xavtyX4sCZ622zQ-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-142" target="orDh_xavtyX4sCZ622zQ-149">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="orDh_xavtyX4sCZ622zQ-142" value="" style="swimlane;whiteSpace=wrap;html=1;fontSize=15;startSize=2660;" vertex="1" parent="1">
           <mxGeometry x="-1260" y="830" width="2650" height="2660" as="geometry" />
         </mxCell>
@@ -326,11 +329,17 @@
         <mxCell id="orDh_xavtyX4sCZ622zQ-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-157" target="orDh_xavtyX4sCZ622zQ-158">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="orDh_xavtyX4sCZ622zQ-157" value="Analise das métricas" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="55" y="4080" width="80" height="80" as="geometry" />
+        <mxCell id="orDh_xavtyX4sCZ622zQ-157" value="Analise das métricas" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="55" y="4080" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-158" target="orDh_xavtyX4sCZ622zQ-167">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="orDh_xavtyX4sCZ622zQ-158" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: WordVisi_MSFontService, Arial, Arial_MSFontService, sans-serif; font-size: 16px; font-variant-ligatures: none; font-weight: 700; text-align: left; -webkit-text-fill-color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0); caret-color: rgb(0, 0, 0); white-space-collapse: preserve;&quot;&gt;Tempo bloqueado das requisições pelo servidor&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: WordVisi_MSFontService, Arial, Arial_MSFontService, sans-serif; font-size: 16px; font-variant-ligatures: none; font-weight: 700; text-align: left; -webkit-text-fill-color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0); caret-color: rgb(0, 0, 0); white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;Consulta:&amp;nbsp;&lt;b&gt;select&lt;/b&gt; field(value), mean() &lt;b&gt;from&lt;/b&gt; default.http_req_blocked &lt;b&gt;group by&lt;/b&gt; time($_interval) &lt;b&gt;and&lt;/b&gt; fill(null) &lt;b&gt;order by time&lt;/b&gt; ascending &lt;b&gt;format as&lt;/b&gt; Time series" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="-2160" y="4340" width="930" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-167" value="&lt;img src=&quot;https://solidarizestorageacount.blob.core.windows.net/messages/Tempo%20bloqueado%20das%20requisi%C3%A7%C3%B5es%20pelo%20servidor%20InfluxDb.png&quot; width=&quot;1600&quot; height=&quot;900&quot;&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2505" y="4615" width="1620" height="910" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
