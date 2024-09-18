@@ -321,7 +321,7 @@
           <mxGeometry x="82.5" y="20" width="435" height="30" as="geometry" />
         </mxCell>
         <mxCell id="orDh_xavtyX4sCZ622zQ-149" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="-3190" y="3850" width="6190" height="2500" as="geometry" />
+          <mxGeometry x="-2900" y="3850" width="5900" height="1890" as="geometry" />
         </mxCell>
         <mxCell id="orDh_xavtyX4sCZ622zQ-150" value="Apresentação dos resultados" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="-182.5" y="3900" width="575" height="30" as="geometry" />
@@ -329,17 +329,44 @@
         <mxCell id="orDh_xavtyX4sCZ622zQ-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-157" target="orDh_xavtyX4sCZ622zQ-158">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-157" target="orDh_xavtyX4sCZ622zQ-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-157" target="orDh_xavtyX4sCZ622zQ-174">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="orDh_xavtyX4sCZ622zQ-157" value="Analise das métricas" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="55" y="4080" width="120" height="120" as="geometry" />
+          <mxGeometry x="-40" y="4070" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="orDh_xavtyX4sCZ622zQ-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-158" target="orDh_xavtyX4sCZ622zQ-167">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="orDh_xavtyX4sCZ622zQ-158" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: WordVisi_MSFontService, Arial, Arial_MSFontService, sans-serif; font-size: 16px; font-variant-ligatures: none; font-weight: 700; text-align: left; -webkit-text-fill-color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0); caret-color: rgb(0, 0, 0); white-space-collapse: preserve;&quot;&gt;Tempo bloqueado das requisições pelo servidor&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: WordVisi_MSFontService, Arial, Arial_MSFontService, sans-serif; font-size: 16px; font-variant-ligatures: none; font-weight: 700; text-align: left; -webkit-text-fill-color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0); caret-color: rgb(0, 0, 0); white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;Consulta:&amp;nbsp;&lt;b&gt;select&lt;/b&gt; field(value), mean() &lt;b&gt;from&lt;/b&gt; default.http_req_blocked &lt;b&gt;group by&lt;/b&gt; time($_interval) &lt;b&gt;and&lt;/b&gt; fill(null) &lt;b&gt;order by time&lt;/b&gt; ascending &lt;b&gt;format as&lt;/b&gt; Time series" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="orDh_xavtyX4sCZ622zQ-158" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: WordVisi_MSFontService, Arial, Arial_MSFontService, sans-serif; font-size: 16px; font-variant-ligatures: none; font-weight: 700; text-align: left; -webkit-text-fill-color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0); caret-color: rgb(0, 0, 0); white-space-collapse: preserve;&quot;&gt;Tempo bloqueado das requisições pelo servidor&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: WordVisi_MSFontService, Arial, Arial_MSFontService, sans-serif; font-size: 16px; font-variant-ligatures: none; font-weight: 700; text-align: left; -webkit-text-fill-color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0); caret-color: rgb(0, 0, 0); white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;Consulta:&amp;nbsp;&lt;b&gt;SELECT&amp;nbsp;&lt;/b&gt;field(value), count()&amp;nbsp;&lt;b&gt;FROM&amp;nbsp;&lt;/b&gt;default.http_req_blocked&amp;nbsp;&lt;b&gt;GROUP BY&lt;/b&gt;&amp;nbsp;time($_interval)&amp;nbsp;&lt;b&gt;AND&lt;/b&gt;&amp;nbsp;fill(null)&amp;nbsp;&lt;b&gt;ORDER BY TIME&lt;/b&gt;&amp;nbsp;ascending&amp;nbsp;&lt;b&gt;FORMAT AS&lt;/b&gt;&amp;nbsp;Time series" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="-2160" y="4340" width="930" height="120" as="geometry" />
         </mxCell>
         <mxCell id="orDh_xavtyX4sCZ622zQ-167" value="&lt;img src=&quot;https://solidarizestorageacount.blob.core.windows.net/messages/Tempo%20bloqueado%20das%20requisi%C3%A7%C3%B5es%20pelo%20servidor%20InfluxDb.png&quot; width=&quot;1600&quot; height=&quot;900&quot;&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-2505" y="4615" width="1620" height="910" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-173" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-169" target="orDh_xavtyX4sCZ622zQ-172">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-169" value="&lt;b&gt;Quantidade de requisições simultâneas ao longo do tempo&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Consulta:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;SELECT &lt;/b&gt;field(value), count()&lt;b&gt; FROM &lt;/b&gt;default.http_reqs&lt;b&gt; GROUP BY &lt;/b&gt;time($_interval)&lt;b&gt; AND &lt;/b&gt;fill(null)&lt;b&gt; ORDER BY TIME &lt;/b&gt;ascending&lt;b&gt; FORMAT AS &lt;/b&gt;Time series&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-445" y="4360" width="930" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-172" value="&lt;img src=&quot;https://solidarizestorageacount.blob.core.windows.net/messages/Quantidade%20de%20requisi%C3%A7%C3%B5es%20simult%C3%A2neas%20ao%20longo%20do%20tempo%20InfluxDb.png&quot; width=&quot;1600&quot; height=&quot;900&quot;&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="4615" width="1620" height="910" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-174" target="orDh_xavtyX4sCZ622zQ-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-174" value="&lt;b&gt;Quantidade de requisições simultâneas ao longo do tempo&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Consulta:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;SELECT &lt;/b&gt;field(value), mean()&lt;b&gt; FROM &lt;/b&gt;default.http_req_waiting&lt;b&gt; GROUP BY &lt;/b&gt;time($_interval)&lt;b&gt; AND &lt;/b&gt;fill(none)&lt;b&gt; ORDER BY TIME &lt;/b&gt;ascending&lt;b&gt; FORMAT AS &lt;/b&gt;Time series&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="4340" width="930" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-179" value="&lt;img src=&quot;https://solidarizestorageacount.blob.core.windows.net/messages/Tempo%20de%20resposta%20das%20requisi%C3%A7%C3%B5es%20ao%20longo%20do%20tempo%20InfluxDb.png&quot; width=&quot;1600&quot; height=&quot;900&quot;&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="4600" width="1610" height="910" as="geometry" />
+        </mxCell>
+        <mxCell id="orDh_xavtyX4sCZ622zQ-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="orDh_xavtyX4sCZ622zQ-179" target="orDh_xavtyX4sCZ622zQ-179">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
